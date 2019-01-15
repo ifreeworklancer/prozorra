@@ -1,0 +1,109 @@
+#intro {
+    padding: 120px 0;
+    height: auto;
+    background: url("../images/bg/intro-bg.jpg") 50% 50% /cover no-repeat;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        height: 100vh;
+        max-height: 1080px;
+        padding: 0;
+    }
+    
+    &::before {
+        content: '';
+        @extend %pos;
+        background: rgba(#000, .7);
+        z-index: 3;
+    }
+
+    &::after {
+        content: '';
+        @extend %pos;
+        left: 50%;
+        background-image: linear-gradient( 90deg, rgba(93,206,206,0) 0%, rgba(93,206,206, 1) 100%);
+        z-index: 2;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+            left: 70%;
+        }
+    }
+
+    .container {
+        z-index: 5;
+    }
+}
+
+.intro-item {
+    position: relative;
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    .custom-list {
+        max-width: 420px;
+        margin-bottom: 15px;
+    }
+
+    &__data {
+        margin-bottom: 25px;
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    left: 25px;
+    bottom: 0;
+    display: block;
+
+    &__text {
+        position: absolute;
+        top: 30px;
+        left: -60px;
+        width: 80px;
+        font-size: 14px;
+        color: #fff;
+        transform: rotate(-90deg);
+    }
+
+    &__icon {
+        position: relative;
+        width: 2px;
+        height: 105px;
+        background: rgba(#fff, .15);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 30px;
+            background: #fff;
+            box-shadow: 0px 2px 35px 8px rgba(255, 255, 255, 0.2);
+            animation: scrollDown 1.5s linear forwards infinite;
+        }
+
+        @keyframes scrollDown {
+            0% {
+                top: 0;
+            }
+
+            25% {
+                top: 25%;
+            }
+
+            50% {
+                top: 50%;
+            }
+
+            75% {
+                top: 75%;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
+    }
+}

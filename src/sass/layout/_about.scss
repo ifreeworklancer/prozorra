@@ -1,0 +1,71 @@
+#about {
+  padding: 0 0 45px;
+
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    padding: 130px 0 45px;
+  }
+
+  .img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    @extend %img;
+    z-index: 5;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 50%;
+      bottom: 30px;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient( -60deg, rgb(91,119,216) 0%, rgb(93,206,206) 100%);
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      left: 30%;
+    }
+  }
+}
+
+.about-item {
+  padding: 35px 0;
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    padding: 75px 0;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+
+    .decor {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      z-index: 4;
+
+      &-item {
+        width: 10px;
+        height: 10px;
+        background: $primary;
+        margin-right: 10px;
+        box-shadow: 0px 0px 16px 5px rgba(91, 255, 191, 0.17);
+      }
+    }
+  }
+}
