@@ -28,6 +28,12 @@
 	s61.121-26.269,63.194-59.333H195V195z"/>
     </symbol>
 
+    <symbol id="quote-icon" viewBox="0 0 32 32">
+            <path d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"/>
+        <path d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"/>
+    </symbol>
+
+
 </svg>
 
 
@@ -53,8 +59,8 @@
                         <div class="header-social-nav">
                             <ul class="social-nav-list">
                                 <li class="social-nav-list-item social-nav-list-item--phone">
-                                    <a href="tel:+38<?= phone_link($contacts['phone'])?>">
-                                        <?= $contacts['phone'];?>
+                                    <a href="tel:+38<?= phone_link($contacts['phone']) ?>">
+                                        <?= $contacts['phone']; ?>
                                     </a>
                                 </li>
                                 <li class="social-nav-list-item social-nav-list-item--facebook">

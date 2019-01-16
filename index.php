@@ -10,6 +10,12 @@ require_once('views/base/header.php');
 $sections = [
 	'intro',
 	'about',
+    'audience',
+    'feedback',
+    'result',
+    'speakers',
+    'theme',
+    'reviews',
 ];
 
 foreach ($sections as $section) {

@@ -1,57 +1,59 @@
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 
-    @media (max-width: map_get($grid-breakpoints, sm)) {
-        font-size: 1rem;
-    }
+  @media (max-width: map_get($grid-breakpoints, sm)) {
+    font-size: 1rem;
+  }
 }
 
 section {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
-h1 {
-    text-transform: uppercase;
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
 
-    @media (max-width: map_get($grid-breakpoints, sm)) {
-        font-size: 2.25rem;
-    }
+
+h1 {
+
+  @media (max-width: map_get($grid-breakpoints, sm)) {
+    font-size: 2.25rem;
+  }
 }
 
 h2 {
-    text-transform: uppercase;
 
-    @media (max-width: map_get($grid-breakpoints, sm)) {
-        font-size: 1.5rem;
-    }
+  @media (max-width: map_get($grid-breakpoints, sm)) {
+    font-size: 1.5rem;
+  }
 }
 
 h3 {
-    text-transform: uppercase;
 
-    @media (max-width: map_get($grid-breakpoints, sm)) {
-        font-size: 1.25rem;
-    }
+  @media (max-width: map_get($grid-breakpoints, sm)) {
+    font-size: 1.25rem;
+  }
 }
 
 a {
-    transition: 0.35s;
+  transition: 0.35s;
 }
 
 ul {
-    margin: 0;
-    @extend .list-unstyled;
+  margin: 0;
+  @extend .list-unstyled;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 input {
-    border-radius: 0;
-    border: none;
-    background: transparent;
+  border-radius: 0;
+  border: none;
+  background: transparent;
 }

@@ -85,10 +85,10 @@ window.jQuery = window.$ = jquery;
 
             const flkty1 = new Flickity(elem1, {
                 prevNextButtons: false,
-                cellAlign: 'center',
+                pageDots: false,
+                cellAlign: 'left',
                 contain: false,
-                initialIndex: 1,
-                draggable: true,
+                draggable: false,
                 wrapAround: true,
             });
 

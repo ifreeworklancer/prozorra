@@ -1,0 +1,48 @@
+#feedback {
+  margin-top: -120px;
+  padding-bottom: 50px;
+  z-index: 8;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    margin-top: -150px;
+  }
+}
+
+.feedback-item {
+  position: relative;
+  padding: 15px 15px 30px;
+  background: #fff;
+  box-shadow: 0px 19px 35px 4px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    padding: 60px;
+    font-size: $h6-font-size;
+  }
+
+  &__title {
+    position: relative;
+    color: $dark;
+    max-width: 440px;
+    margin-bottom: 30px;
+    font-size: 15px;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      font-size: $h6-font-size;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: -50px;
+      bottom: .7rem;
+      width: 40px;
+      height: 2px;
+      background: $secondary;
+      display: none;
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        display: block;
+      }
+    }
+  }
+}

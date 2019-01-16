@@ -7,7 +7,10 @@
             left: 0;
             bottom: 90%;
             font-size: 13px;
-            color: #a8b7cf;
+        }
+
+        .form-control {
+            background: #fff;
         }
 
         &::before {
@@ -19,8 +22,8 @@
     .label-placeholder {
         position: absolute;
         left: 15px;
-        bottom: 0;
-        color: #ccc;
+        bottom: 3px;
+        color: #919191;
         cursor: pointer;
         z-index: 5;
         transition: .5s;
@@ -28,10 +31,11 @@
 
     .form-control {
         padding: 10px 15px;
-        background: #202937;
+        background: #f6f6f6;
         border-radius: 0;
-        border: none;
-        color: #fff;
+        border: 1px solid $light;
+        color: $secondary;
+        transition: .5s;
     }
 
     &--btn {
@@ -56,9 +60,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
-    @media (min-width: map_get($grid-breakpoints, sm)) {
+    @media (min-width: map_get($grid-breakpoints, md)) {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -67,9 +70,23 @@
         width: 100%;
         margin: 0 auto 30px;
 
-        @media (min-width: map_get($grid-breakpoints, sm)) {
+        @media (min-width: map_get($grid-breakpoints, md)) {
             width: 30%;
             margin: 0;
+        }
+    }
+
+    .btn {
+
+        @media (min-width: map_get($grid-breakpoints, md)) {
+            font-size: 14px;
+            padding: 0 20px;
+            height: auto;
+        }
+
+        @media (min-width: map_get($grid-breakpoints, lg)) {
+            font-size: 18px;
+            padding: 0 $btn-padding-x;
         }
     }
 }

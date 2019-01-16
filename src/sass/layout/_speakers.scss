@@ -1,0 +1,96 @@
+#speakers {
+  padding: 100px 0;
+  background: #f8fbfc;
+  color: $dark;
+
+  .section-title {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0 30px;
+
+    .decor-square {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &--left {
+        left: 0;
+      }
+
+      &--right {
+        right: 0;
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 70%;
+    bottom: 0;
+    background: url("../images/bg/speakers-bg.png") 50% 50% /contain no-repeat;
+  }
+}
+
+.speakers-item {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0px 7px 7px 1px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    flex-direction: row;
+  }
+
+  &::before {
+    content: '';
+    @extend %pos;
+    top: auto;
+    height: 5px;
+    background: $primary;
+  }
+
+  .main-content {
+    padding: 25px 15px;
+    font-size: 16px;
+    width: 100%;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      width: 70%;
+      padding: 50px 60px;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: $font-size-base;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .position {
+      margin-bottom: 20px;
+      color: #888888;
+    }
+  }
+
+  .secondary-content {
+    width: 100%;
+    height: auto;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      width: 30%;
+    }
+
+    .img {
+      width: 100%;
+      min-height: 300px;
+      height: 100%;
+      @extend %img;
+    }
+  }
+}

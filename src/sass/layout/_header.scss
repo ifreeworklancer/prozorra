@@ -46,7 +46,7 @@
         color: #b8b8b8;
         transition: .5s;
 
-        @media (max-width: map_get($grid-breakpoints, lg)) {
+        @media (min-width: map_get($grid-breakpoints, lg)) {
           font-size: $font-size-base;
         }
 

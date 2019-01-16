@@ -1,6 +1,6 @@
 #about {
   padding: 0 0 45px;
-
+  z-index: 4;
 
   @media (min-width: map_get($grid-breakpoints, lg)) {
     padding: 130px 0 45px;

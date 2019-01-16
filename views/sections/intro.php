@@ -7,7 +7,7 @@
                     <h1 class="intro-item__title">
                         <?= $intro['title']; ?>
                     </h1>
-                    <ul class="custom-list">
+                    <ul class="custom-list custom-list--primary">
                         <li>
                             <?= $intro['description']; ?>
                         </li>
