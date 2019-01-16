@@ -15,7 +15,10 @@ $sections = [
     'result',
     'speakers',
     'theme',
+    'tariffs',
     'reviews',
+    'feedback',
+    'contacts'
 ];
 
 foreach ($sections as $section) {

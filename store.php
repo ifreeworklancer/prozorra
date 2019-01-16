@@ -7,8 +7,8 @@ $nav = [
     'about' => 'Про нас',
     'audience' => 'Для кого',
     'result' => 'Що отримаєте',
-    'reviews' => 'Наші тарифи',
-    'tariffs' => 'Відгуки',
+    'reviews' => 'Відгуки',
+    'tariffs' => 'Наші тарифи',
     'contacts' => 'Контакти',
 ];
 
@@ -174,6 +174,16 @@ $theme = [
     ],
 ];
 
+$tariffs = [
+    'image' => '../images/content/tariffs/tariffs-1.jpg',
+    'title' => 'Наш тариф',
+    'list' => '<ul><li>Lorem prehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no in voluptate velit esse cillum dolore eu fugiat occaecat cupidatat non ratkin.</li><li>Excepteur sint occaecat cupidatat no in voluptate velit esse cillum dolore eu fugiat occaecat cupidatat non ratkin.</li><li>Lorem prehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li></ul>',
+    'price' => '99',
+    'free_image' => '../images/content/tariffs/tariffs-free-1.jpg',
+    'free_title' => 'безкоштовно',
+    'free_description' => 'Lorem prehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur suno. Excepteur sint occaecat'
+];
+
 $reviews = [
     'title' => 'Відгуки',
     'list' => [
@@ -196,8 +206,10 @@ $reviews = [
 ];
 
 $contacts = [
+    'title' => 'контакти',
     'phone' => '099 777 00 33',
     'messenger' => '099 888 00 33',
     'email' => 'fabrika@gmail.com',
-    'place' => 'г.Киев просп.Голосеевский 58',
+    'address' => 'г.Киев просп.Голосеевский 58',
+    'address_link' => 'https://www.google.com/maps?q=%D0%B3.%D0%9A%D0%B8%D0%B5%D0%B2+%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%D0%93%D0%BE%D0%BB%D0%BE%D1%81%D0%B5%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+58&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiA8MnuqfPfAhWO-ioKHUIBDRIQ_AUIDigB'
 ];
