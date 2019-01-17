@@ -71,7 +71,7 @@
     }
 
     .content {
-        max-width: 470px;
+        max-width: 500px;
 
         ul {
 
@@ -85,9 +85,11 @@
 
                     .icon {
                         margin-right: 15px;
+                        display: flex;
                         
                         svg {
                             fill: #fff;
+                            margin-right: 10px;
                         }
                     }
                 }

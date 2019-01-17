@@ -25,7 +25,20 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="tel:+38<?= phone_link($contacts['messenger']) ?>" target="_blank"><?= $contacts['messenger']; ?></a>
+                                <a href="tel:+38<?= phone_link($contacts['messenger']) ?>" target="_blank">
+                                    <div class="icon">
+                                        <svg width="15" height="15">
+                                            <use xlink:href="#telegram-icon"></use>
+                                        </svg>
+                                        <svg width="15" height="15">
+                                            <use xlink:href="#viber-icon"></use>
+                                        </svg>
+                                        <svg width="15" height="15">
+                                            <use xlink:href="#whatsapp-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <?= $contacts['messenger']; ?>
+                                </a>
                             </li>
                             <li>
                                 <a href="mailto:<?= $contacts['email']; ?>" target="_blank">
