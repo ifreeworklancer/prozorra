@@ -1,64 +1,35 @@
 <?php
 
-use \AmoCRM\Handler;
-use \AmoCRM\Request;
-use \AmoCRM\Lead;
-use \AmoCRM\Contact;
+if (isset($_POST['user_name']) && isset($_POST['user_phone'])) {
 
-require(__DIR__ . '/vendor/autoload.php');
+    $name = $_POST['user_name'];
+    $phone = $_POST['user_phone'];
 
-if (isset($_POST['name']) && isset($_POST['phone'])) {
-	$title = $_POST['title'];
-	$name = $_POST['name'];
-	$phone = str_replace([' ', '-', '(', ')'], '', $_POST['phone']);
+    $to = 'info@impressionbureau.pro';
+    $subject = 'Заявка с лендинга для Prozorra';
 
-	try {
-		$api = new Handler('carleoneusa', 'zungng7@gmail.com');
+    $message = "
+    <html>
+        <head>
+        <title>{$subject}</title>
+        <style>body{font: normal 1rem/1.5 sans-serif;}</style>
+        </head>
+        <body>
+        <h2>Заявка от {$name}</h2>
+        <p>Телефон: {$phone}</p>";
 
-		$lead = new Lead();
-		$lead
-			->setName($title)
-			->setResponsibleUserId($api->config['ResponsibleUserId'])
-			->setCustomField(464037, '825175')
-			->setStatusId($api->config['LeadStatusId']);
 
-		if (isset($_POST['car'])) {
-			$lead = $lead->setTags($_POST['car']);
-		}
+    $message .= "
+        </body>
+        </html>
+    ";
+    $headers = 'From: info@impressionbureau.pro' . "\r\n" .
+        'Reply-To: ' .
+        'X-Mailer: PHP/' . phpversion();
+    $headers = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
-		if (isset($_POST['utm'])) {
-			$lead = $lead->setCustomField(490681, $_POST['utm']);
-		}
+    mail($to, $subject, $message, $headers);
 
-		$api->request(new Request(Request::SET, $lead));
-		$lead = $api->last_insert_id;
-
-		$contact = new Contact();
-		$contact
-			->setName($name)
-			->setResponsibleUserId($api->config['ResponsibleUserId'])
-			->setLinkedLeadsId($lead)
-			->setCustomField(
-				$api->config['ContactFieldPhone'],
-				$phone,
-				'WORK'
-			)
-			->setTags($title);
-
-		$api->request(new Request(Request::GET, ['query' => $phone], ['contacts', 'list']));
-		$contact_exists = ($api->result) ? $api->result->contacts[0] : false;
-
-		if ($contact_exists) {
-			$contact
-				->setUpdate($contact_exists->id, $contact_exists->last_modified + 1)
-				->setResponsibleUserId($contact_exists->responsible_user_id)
-				->setLinkedLeadsId($contact_exists->linked_leads_id);
-		}
-
-		$api->request(new Request(Request::SET, $contact));
-	} catch (\Exception $e) {
-		echo $e->getMessage();
-	}
+    header('Location: thanks/index.php');
 }
-
-header('Location: /thanks');

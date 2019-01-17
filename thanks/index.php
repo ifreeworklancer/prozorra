@@ -1,8 +1,9 @@
 <?php
 
 require_once('../store.php');
+require_once('../functions.php');
 
-require_once('../views/base/header.php');
+require_once('../views/base/header-secondary.php');
 ?>
 
 <section id="thanks-page">
@@ -10,14 +11,11 @@ require_once('../views/base/header.php');
         <div class="row w-100">
             <div class="col-12">
                 <div class="thanks-page-item text-center">
-                    <h1 class="thanks-page-item__decor-title text-white">
-                        Спасибо!
+                    <h1 class="thanks-page-item__title">
+                        Дякуємо!
                     </h1>
-                    <h2 class="thanks-page-item__title text-primary">
-                        Спасибо!
-                    </h2>
-                    <div class="thanks-page-item__subtitle text-white">
-                        Наш менеджер с Вами свяжется...
+                    <div class="thanks-page-item__subtitle">
+                        Наш менеджер з Вами зв'яжеться...
                     </div>
                     <a href="/" class="btn btn-primary">
                         На главную
@@ -26,8 +24,20 @@ require_once('../views/base/header.php');
             </div>
         </div>
     </div>
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 </section>
 
 <?php
 
-require_once('../views/base/footer.php');
+require_once('../views/base/footer-secondary.php');

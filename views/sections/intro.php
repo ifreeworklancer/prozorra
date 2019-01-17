@@ -15,7 +15,7 @@
                     <div class="intro-item__data">
                         <?= $intro['data']; ?>
                     </div>
-                    <a href="#" class="btn btn-primary">
+                    <a href="#" class="btn btn-primary open-modal-feedback">
                         Зареєструватися
                     </a>
                 </div>

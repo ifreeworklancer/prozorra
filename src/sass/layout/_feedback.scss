@@ -6,6 +6,13 @@
   @media (min-width: map_get($grid-breakpoints, sm)) {
     margin-top: -150px;
   }
+
+  .decor-rhombus-gradient {
+    top: 30px;
+    right: -50px;
+    z-index: 3;
+  }
+
 }
 
 .feedback-item {

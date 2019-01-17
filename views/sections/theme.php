@@ -1,6 +1,19 @@
 <!-- Theme -->
 <section id="theme">
-    <div class="banner"></div>
+    <div class="banner">
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-12">

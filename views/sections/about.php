@@ -1,6 +1,6 @@
 <!-- About -->
 <section id="about">
-    <div class="img" style="background-image:url('<?= $about['image']; ?>');"></div>
+    <div class="img img--about" style="background-image:url('<?= $about['image']; ?>');"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm-7 col-lg-5 mx-auto ml-lg-auto mr-lg-0">
@@ -18,4 +18,7 @@
             </div>
         </div>
     </div>
+    <div class="decor-rhombus-white"></div>
+    <div class="decor-rhombus-gradient decor-rhombus-gradient--top"></div>
+    <div class="decor-rhombus-gradient decor-rhombus-gradient--middle"></div>
 </section>

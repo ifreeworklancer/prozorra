@@ -1,6 +1,6 @@
 <!-- Tariffs -->
 <section id="tariffs">
-<div class="image-item" style="background-image: url('<?= $tariffs['image']; ?>')"></div>
+<div class="image-item image-item--tariffs" style="background-image: url('<?= $tariffs['image']; ?>')"></div>
     <div class="container">
         <div class="row justify-content-center justify-content-lg-end">
             <div class="col-sm-8 col-lg-5">
@@ -13,7 +13,7 @@
                         <div class="price-item">
                             Цена <span class="price-item__value">$<?= $tariffs['price']; ?></span>
                         </div>
-                        <a href="#" class="btn btn-primary">зареєструватися</a>
+                        <a href="#" class="btn btn-primary open-modal-feedback">зареєструватися</a>
                     </div>
                 </div>
             </div>

@@ -38,7 +38,7 @@ window.jQuery = window.$ = jquery;
             }, 1500);
 
             $('.burger-menu').removeClass('active');
-            $('.menu').removeClass('active');
+            $('.menu').slideUp();
         }
     });
 
@@ -61,6 +61,27 @@ window.jQuery = window.$ = jquery;
     /**
      * Modal
      */
+    var modalFeedback = $('.custom-modal--feedback');
+    var closeModal = $('.close-modal');
+    var modalMask = $('.modal-mask');
+
+    $('.open-modal-feedback').on('click', function (e) {
+        e.preventDefault();
+        $(modalFeedback).addClass('active');
+        $(modalMask).addClass('active');
+    });
+
+
+    $(closeModal).on('click', function () {
+        $(modalFeedback).removeClass('active');
+        $(modalMask).removeClass('active');
+    });
+
+
+    $(modalMask).on('click', function () {
+        $(modalFeedback).removeClass('active');
+        $(modalMask).removeClass('active');
+    });
 
 
     /**
@@ -109,56 +130,61 @@ window.jQuery = window.$ = jquery;
    /**
      * Animate scroll
      */
-    // ScrollReveal().reveal('.intro-item', {
-    //     origin: 'left',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.intro-order', {
-    //     origin: 'right',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.pain-item', {
-    //     origin: 'left',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.pain-beforeAfter', {
-    //     origin: 'right',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.response-item', {
-    //     origin: 'bottom',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.sale-item', {
-    //     origin: 'left',
-    //     delay: 500,
-    //     distance: '400px',
-    // });
-    // ScrollReveal().reveal('.sale-img', {
-    //     origin: 'right',
-    //     delay: 500,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.reviews-slider', {
-    //     origin: 'bottom',
-    //     delay: 500,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.stages', {
-    //     origin: 'left',
-    //     delay: 500,
-    //     distance: '200px',
-    // }, 50);
-    // ScrollReveal().reveal('.order-item', {
-    //     origin: 'bottom',
-    //     delay: 500,
-    //     distance: '200px',
-    // });
+    ScrollReveal().reveal('.intro-item', {
+        origin: 'left',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.img--about', {
+        origin: 'left',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.about-item', {
+        origin: 'right',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.audience-item', {
+        origin: 'bottom',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('#feedback', {
+        origin: 'bottom',
+        delay: 500,
+        distance: '400px',
+    });
+    ScrollReveal().reveal('.result-item', {
+        origin: 'left',
+        delay: 500,
+        distance: '400px',
+    });
+    ScrollReveal().reveal('.speakers-item', {
+        origin: 'bottom',
+        delay: 500,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.image-item--tariffs', {
+        origin: 'left',
+        delay: 500,
+        distance: '200px',
+    }, 50);
+    ScrollReveal().reveal('.tariffs-item', {
+        origin: 'right',
+        delay: 500,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.tariffs-free-item', {
+        origin: 'right',
+        delay: 500,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.contacts-item', {
+        origin: 'left',
+        delay: 500,
+        distance: '400px',
+    });
 
 
 })(jQuery)
