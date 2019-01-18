@@ -17,21 +17,17 @@
                     </div>
                 </div>
             </div>
-            <div class=" col-lg-9">
-                <div class="tariffs-free-item">
-                    <div class="secondary-content">
-                        <div class="img" style="background-image: url('<?= $tariffs['free_image']; ?>')"></div>
-                    </div>
-                    <div class="main-content">
-                        <div class="title">
-                            <?= $tariffs['free_title']; ?>
-                        </div>
-                        <p class="description">
-                            <?= $tariffs['free_description']; ?>
-                        </p>
-                    </div>
-                </div>
-            </div>
+<!--            <div class=" col-lg-9">-->
+<!--                <div class="tariffs-free-item">-->
+<!--                    <div class="secondary-content">-->
+<!--                        <div class="img" style="background-image: url('')"></div>-->
+<!--                    </div>-->
+<!--                    <div class="main-content">-->
+<!--                        <div class="title"></div>-->
+<!--                        <p class="description"></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 </section>

@@ -176,8 +176,8 @@ $theme = [
 
 $tariffs = [
     'image' => '../images/content/tariffs/tariffs-1.jpg',
-    'title' => 'Наш тариф',
-    'list' => '<ul><li>Lorem prehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no in voluptate velit esse cillum dolore eu fugiat occaecat cupidatat non ratkin.</li><li>Excepteur sint occaecat cupidatat no in voluptate velit esse cillum dolore eu fugiat occaecat cupidatat non ratkin.</li><li>Lorem prehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li></ul>',
+    'title' => 'У вартість входить',
+    'list' => '<ul><li>участь у семінарі</li><li>сертифікат про проходження</li> <li>дві кави брейку, обід, </li><li></li><li>презентаційний та корисні матеріали по закінченню семінару</li></ul>',
     'price' => '99',
     'free_image' => '../images/content/tariffs/tariffs-free-1.jpg',
     'free_title' => 'безкоштовно',
@@ -188,19 +188,24 @@ $reviews = [
     'title' => 'Відгуки',
     'list' => [
         [
-            'text' => 'Sint occaecat cupidatat non proident, sunt  culpa qui sapar cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
-            'name' => 'Милена, сэйлз-менеджер торговой компании',
-            'image' => '../images/content/reviews/reviews-1.jpg',
+            'text' => 'Відгук позитивний. Інформація подана на високому рівні, але доступно',
+            'name' => 'Дмитро Валерійович',
         ],
         [
-            'text' => 'Sint occaecat cupidatat non proident, sunt  culpa qui sapar cillum dolore eu fugiat nulla pariatur.',
-            'name' => 'Шельма, менеджер компании',
-            'image' => '../images/content/reviews/reviews-1.jpg',
+            'text' => 'Мої найкращі побажання. Все дуже сподобалося, презентаційні матеріали та корисні посилання буди у пригоді в практичні діяльності',
+            'name' => 'Володимир Володимирович',
         ],
         [
-            'text' => 'Sint occaecat cupidatat non proident, sunt  culpa qui sapar cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Excepteur sint occaecat cupidatat non proident. Excepteur sint occaecat cupidatat non proident.',
-            'name' => 'Женя, менеджер торговой компании',
-            'image' => '../images/content/reviews/reviews-1.jpg',
+            'text' => 'Доступне надання інформації, розширені відповіді. Дякую',
+            'name' => 'Олена Михайлівні',
+        ],
+        [
+            'text' => 'Пізнавально, інформативно і корисно.Успіхів у роботі.',
+            'name' => 'Леся Юріївна',
+        ],
+        [
+            'text' => 'Все добре. Підкреслив для себе багато цікавого з теми про оскарження.',
+            'name' => 'Ігор Олексійович',
         ],
     ]
 ];

@@ -2,7 +2,7 @@
 <section id="reviews">
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 mx-auto">
+            <div class="col-lg-8 mx-auto">
                 <h2 class="section-title">
                     <?= $reviews['title']; ?>
                     <div class="decor">
@@ -20,7 +20,7 @@
                     foreach ($reviews['list'] as $item) :
                         ?>
                         <div class="reviews-slider-item">
-                            <div class="main-content order-2 order-sm-1">
+                            <div class="main-content">
                                 <div class="quote">
                                     <svg width="45" height="35">
                                         <use xlink:href="#quote-icon"></use>
@@ -32,10 +32,6 @@
                                 <div class="name">
                                     <?= $item['name']; ?>
                                 </div>
-                            </div>
-                            <div class="secondary-content order-1 order-sm-2">
-                                <div class="img" style="background-image:url('<?= $item['image']; ?>');"></div>
-                                <div class="decor-img"></div>
                             </div>
                         </div>
                     <?php endforeach; ?>

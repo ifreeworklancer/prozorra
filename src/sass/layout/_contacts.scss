@@ -3,6 +3,12 @@
     background: url("../images/bg/contacts-bg.jpg") 50% 50% /cover no-repeat;
     z-index: 3;
 
+    &::before {
+        content: '';
+        @extend %pos;
+        background: rgba(#000, .4);
+    }
+
     .section-title {
         position: relative;
         margin-bottom: 30px;
