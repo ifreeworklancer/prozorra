@@ -1,7 +1,11 @@
 #contacts {
-    margin-top: -275px;
+    margin-top: -290px;
     background: url("../images/bg/contacts-bg.jpg") 50% 50% /cover no-repeat;
     z-index: 3;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        margin-top: -200px;
+    }
 
     &::before {
         content: '';
@@ -30,37 +34,6 @@
               box-shadow: 0px 0px 16px 5px rgba(91, 255, 191, 0.17);
             }
           }
-    }
-
-    .developer {
-        position: absolute;
-        left: 0;
-        right: 0;
-        text-align: center;
-        bottom: 10px;
-        font-size: 12px;
-        color: #fff;
-        z-index: 10;
-
-        @media (min-width: map_get($grid-breakpoints, sm)) {
-            left: 70%;
-            font-size: 14px;
-            right: auto;
-            text-align: left;
-        }
-
-        @media (min-width: map_get($grid-breakpoints, lg)) {
-            left: 53%;
-        }
-
-        a {
-            font-weight: bold;
-            color: #fff;
-        }
-    }
-
-    @media (min-width: map_get($grid-breakpoints, sm)) {
-        margin-top: -150px;
     }
 }
 

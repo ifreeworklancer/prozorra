@@ -6,6 +6,13 @@
   color: $dark;
   text-align: center;
 
+  .custom-list {
+
+    li {
+      margin-bottom: 15px;
+    }
+  }
+
   .section-title {
     position: relative;
     padding: 0 30px;
@@ -34,6 +41,10 @@
   }
 }
 
+.audience-main {
+  margin-top: 90px;
+}
+
 .audience-item {
   margin-bottom: 25px;
 
@@ -45,3 +56,4 @@
     margin-bottom: 20px;
   }
 }
+

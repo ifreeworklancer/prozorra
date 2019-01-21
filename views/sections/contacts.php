@@ -66,7 +66,4 @@
             </div>
         </div>
     </div>
-    <div class="developer">
-        <?= date('Y') ?> Дизайн и разработка сайта компании <a href="https://impressionbureau.pro" target="_blank">Impression.Bureau</a>
-    </div>
 </section>
