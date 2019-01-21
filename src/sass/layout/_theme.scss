@@ -76,9 +76,11 @@
       }
 
       .data {
+        padding: 10px;
         background: #fafafa;
 
         @media (min-width: map_get($grid-breakpoints, sm)) {
+          padding: 40px;
           width: 15%;
         }
       }
@@ -106,11 +108,16 @@
       }
 
       .info {
+        padding: 10px;
         font-size: 14px;
         background-color: #f4fbff;
 
         @media (min-width: map_get($grid-breakpoints, sm)) {
           width: 20%;
+          padding: 40px;
+        }
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
         }
 
         .img {
