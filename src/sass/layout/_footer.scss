@@ -10,14 +10,14 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: map_get($grid-breakpoints, sm)) {
+  @media (min-width: map_get($grid-breakpoints, md)) {
     flex-direction: row;
   }
 
   li {
     margin-top: 15px;
 
-    @media (min-width: map_get($grid-breakpoints, sm)) {
+    @media (min-width: map_get($grid-breakpoints, md)) {
       margin-top: 0;
     }
 

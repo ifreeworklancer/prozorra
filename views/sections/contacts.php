@@ -41,7 +41,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:<?= $contacts['email']; ?>" target="_blank">
+                                <a href="mailto:<?= $contacts['email']; ?>">
                                     <div class="icon">
                                         <svg width="20" height="20">
                                             <use xlink:href="#email-icon"></use>

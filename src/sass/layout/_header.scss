@@ -4,7 +4,32 @@
   padding-top: 30px;
   width: 100%;
   z-index: 500;
-  
+
+  .logo {
+    position: relative;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      left: -50px;
+    }
+
+    img {
+      position: relative;
+      z-index: 5;
+    }
+
+    &::before {
+      content: '';
+      @extend %pos;
+      top: -100px;
+      left: -15px;
+      right: -15px;
+      bottom: -40px;
+      background: #fff;
+      z-index: 4;
+    }
+  }
+
+
   &.header-secondary {
     .header-nav-list {
       
@@ -130,26 +155,4 @@
   }
 }
 
-.logo {
-  position: relative;
 
-  @media (min-width: map_get($grid-breakpoints, lg)) {
-    left: -50px;
-  }
-
-  img {
-    position: relative;
-    z-index: 5;
-  }
-  
-  &::before {
-    content: '';
-    @extend %pos;
-    top: -100px;
-    left: -15px;
-    right: -15px;
-    bottom: -40px;
-    background: #fff;
-    z-index: 4;
-  }
-}

@@ -211,7 +211,7 @@ $contacts = [
     'facebook' => 'https://www.facebook.com/profesiyni.zakupivli/',
     'phone' => '+380 (63) 578 04 80',
     'messenger' => '+380 (63) 578 04 80',
-    'email' => 'fabrika@gmail.com',
-    'address' => 'г.Киев просп.Голосеевский 58',
-    'address_link' => 'https://www.google.com/maps?q=%D0%B3.%D0%9A%D0%B8%D0%B5%D0%B2+%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%D0%93%D0%BE%D0%BB%D0%BE%D1%81%D0%B5%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+58&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiA8MnuqfPfAhWO-ioKHUIBDRIQ_AUIDigB'
+    'email' => 'cpb.org.ua@gmail.com',
+    'address' => 'вул.Бульварно-Кудрявська, 22, м.Київ, 01601',
+    'address_link' => 'https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%91%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80%D0%BD%D0%BE-%D0%9A%D1%83%D0%B4%D1%80%D1%8F%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,+22,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4ce60898c3581:0x98e2fe1c31e01fbb?ved=2ahUKEwjG6YaM-v7fAhVK1iwKHdqcAoMQ8gEwAHoECAMQAQ'
 ];

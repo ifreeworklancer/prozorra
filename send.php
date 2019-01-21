@@ -5,7 +5,7 @@ if (isset($_POST['user_name']) && isset($_POST['user_phone'])) {
     $name = $_POST['user_name'];
     $phone = $_POST['user_phone'];
 
-    $to = 'info@impressionbureau.pro';
+    $to = 'cpb.org.ua@gmail.com';
     $subject = 'Заявка с лендинга для Prozorra';
 
     $message = "
