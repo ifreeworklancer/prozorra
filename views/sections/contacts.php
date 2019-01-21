@@ -15,7 +15,7 @@
                         </h2>
                         <ul>
                             <li>
-                                <a href="tel:+38<?= phone_link($contacts['phone']) ?>" target="_blank">
+                                <a href="tel:<?= phone_link($contacts['phone']) ?>">
                                     <div class="icon">
                                         <svg width="20" height="30"> 
                                             <use xlink:href="#phone-icon"></use>
@@ -25,7 +25,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="tel:+38<?= phone_link($contacts['messenger']) ?>" target="_blank">
+                                <a href="tel:<?= phone_link($contacts['messenger']) ?>">
                                     <div class="icon">
                                         <svg width="15" height="15">
                                             <use xlink:href="#telegram-icon"></use>

@@ -11,7 +11,7 @@
                     <?= $tariffs['list']; ?>
                     <div class="price">
                         <div class="price-item">
-                            Цена <span class="price-item__value">$<?= $tariffs['price']; ?></span>
+                            Цена <span class="price-item__value"><?= $tariffs['price']; ?> грн</span>
                         </div>
                         <a href="#" class="btn btn-primary open-modal-feedback">зареєструватися</a>
                     </div>

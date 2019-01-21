@@ -131,8 +131,25 @@
 }
 
 .logo {
-  font-size: 24px;
-  font-family: $headings-font-family;
-  color: #fff;
-  font-weight: bold;
+  position: relative;
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    left: -50px;
+  }
+
+  img {
+    position: relative;
+    z-index: 5;
+  }
+  
+  &::before {
+    content: '';
+    @extend %pos;
+    top: -100px;
+    left: -15px;
+    right: -15px;
+    bottom: -40px;
+    background: #fff;
+    z-index: 4;
+  }
 }

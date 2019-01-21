@@ -1,7 +1,5 @@
 <?php
-$app_title = 'Prozorra';
-$facebook = 'http://facebook.com';
-$instagram = 'http://instagram.com';
+$app_title = 'Prozorro';
 
 $nav = [
     'about' => 'Про нас',
@@ -15,7 +13,7 @@ $nav = [
 $intro = [
     'title' => 'Закупiть якісний товар за приємливі кошти',
     'description' => 'Пропишiть документацію так, щоб на торгах були постачальники лише з якісним товаром!',
-    'data' => 'Дата проведення: 5 лютого 2019 року',
+    'data' => 'Дата проведення: 18 лютого 2019 року',
 ];
 
 $about = [
@@ -177,11 +175,9 @@ $theme = [
 $tariffs = [
     'image' => '../images/content/tariffs/tariffs-1.jpg',
     'title' => 'У вартість входить',
-    'list' => '<ul><li>участь у семінарі</li><li>сертифікат про проходження</li> <li>дві кави брейку, обід, </li><li></li><li>презентаційний та корисні матеріали по закінченню семінару</li></ul>',
-    'price' => '99',
+    'list' => '<ul><li>участь у семінарі</li><li>сертифікат про проходження</li> <li>дві кави брейку, обід</li><li></li><li>презентаційні та корисні матеріали по закінченню семінару</li></ul>',
+    'price' => '1580',
     'free_image' => '../images/content/tariffs/tariffs-free-1.jpg',
-    'free_title' => 'безкоштовно',
-    'free_description' => 'Lorem prehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur suno. Excepteur sint occaecat'
 ];
 
 $reviews = [
@@ -212,8 +208,9 @@ $reviews = [
 
 $contacts = [
     'title' => 'контакти',
-    'phone' => '099 777 00 33',
-    'messenger' => '099 888 00 33',
+    'facebook' => 'https://www.facebook.com/profesiyni.zakupivli/',
+    'phone' => '+380 (63) 578 04 80',
+    'messenger' => '+380 (63) 578 04 80',
     'email' => 'fabrika@gmail.com',
     'address' => 'г.Киев просп.Голосеевский 58',
     'address_link' => 'https://www.google.com/maps?q=%D0%B3.%D0%9A%D0%B8%D0%B5%D0%B2+%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%D0%93%D0%BE%D0%BB%D0%BE%D1%81%D0%B5%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+58&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiA8MnuqfPfAhWO-ioKHUIBDRIQ_AUIDigB'
