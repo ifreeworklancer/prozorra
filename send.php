@@ -1,8 +1,9 @@
 <?php
 
-if (isset($_POST['user_name']) && isset($_POST['user_phone'])) {
+if (isset($_POST['user_name']) && isset($_POST['user_email']) && isset($_POST['user_phone'])) {
 
     $name = $_POST['user_name'];
+    $email = $_POST['user_email'];
     $phone = $_POST['user_phone'];
 
     $to = 'cpb.org.ua@gmail.com';
@@ -16,6 +17,7 @@ if (isset($_POST['user_name']) && isset($_POST['user_phone'])) {
         </head>
         <body>
         <h2>Заявка от {$name}</h2>
+        <p>Почта: {$email}</p>
         <p>Телефон: {$phone}</p>";
 
 
@@ -24,7 +26,7 @@ if (isset($_POST['user_name']) && isset($_POST['user_phone'])) {
         </html>
     ";
     $headers = 'From: info@impressionbureau.pro' . "\r\n" .
-        'Reply-To: ' .
+        'Reply-To:' . $email . ' ' .
         'X-Mailer: PHP/' . phpversion();
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";

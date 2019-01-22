@@ -15,6 +15,14 @@
                     <input type="text" name="user_name" id="user-name--<?= $name ?>" class="form-control" required>
                 </div>
                 <div class="form-group">
+                    <label for="user-email--<?php echo $email = generateRandomString() ?>"
+                           class="label-placeholder">
+                        Email
+                    </label>
+                    <input type="email" name="user_email" id="user-email--<?= $email ?>" class="form-control"
+                           required>
+                </div>
+                <div class="form-group">
                     <label for="user-phone--<?php echo $phone = generateRandomString() ?>" class="label-placeholder">
                         Телефон
                     </label>

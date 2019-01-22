@@ -1,10 +1,10 @@
 #contacts {
-    margin-top: -290px;
+    margin-top: -360px;
     background: url("../images/bg/contacts-bg.jpg") 50% 50% /cover no-repeat;
     z-index: 3;
 
     @media (min-width: map_get($grid-breakpoints, sm)) {
-        margin-top: -200px;
+        margin-top: -230px;
     }
 
     &::before {
@@ -41,12 +41,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 300px 15px 100px;
+    padding: 360px 15px 100px;
     max-width: 620px;
     background: rgba(#324550, .9);
 
     @media (min-width: map_get($grid-breakpoints, sm)) {
-        padding: 200px 0 100px;
+        padding: 230px 0 100px;
     }
 
     .content {

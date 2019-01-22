@@ -76,19 +76,7 @@
         }
     }
 
-    .btn {
 
-        @media (min-width: map_get($grid-breakpoints, md)) {
-            font-size: 14px;
-            padding: 0 20px;
-            height: auto;
-        }
-
-        @media (min-width: map_get($grid-breakpoints, lg)) {
-            font-size: 18px;
-            padding: 0 $btn-padding-x;
-        }
-    }
 }
 
 .form-column {

@@ -1,9 +1,9 @@
 #result {
-  margin-top: -270px;
+  margin-top: -360px;
   background: url("../images/bg/result-bg.jpg") 50% 50% /cover no-repeat;
 
   @media (min-width: map_get($grid-breakpoints, sm)) {
-    margin-top: -150px;
+    margin-top: -230px;
   }
 
   &::before {
@@ -17,12 +17,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 300px 15px 100px;
+  padding: 350px 15px 100px;
   max-width: 620px;
   background-image: linear-gradient( 180deg, rgba(91,119,216, .8) 0%, rgba(93,206,206 , .8) 100%);
 
   @media (min-width: map_get($grid-breakpoints, sm)) {
-    padding: 200px 0 100px;
+    padding: 230px 0 100px;
   }
 
   .content {

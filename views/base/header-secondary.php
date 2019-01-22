@@ -73,11 +73,11 @@
 <!-- App-header -->
 <header id="app-header" class="header-secondary">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-2 col-lg-3 text-center">
-                <a href="/" class="logo">лого</a>
+        <div class="row align-items-start">
+            <div class="col-8 col-sm-2 col-lg-3 text-center">
+                <a href="/" class="logo"><img src="../../images/icon/logo/logo.png" alt=""></a>
             </div>
-            <div class="col-10 col-lg-9 d-flex justify-content-end d-sm-block">
+            <div class="col-4 col-sm-10 col-lg-9 d-flex justify-content-end d-sm-block">
                 <div class="header-item d-none d-sm-block">
                     <div class="header-item-row header-item-row--top">
                         <ul class="header-nav-list">
