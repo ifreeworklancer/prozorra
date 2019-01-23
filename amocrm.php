@@ -11,7 +11,7 @@ try {
 	$name = $_POST['user_name'];
 	$email = $_POST['user_email'];
 	$phone = $_POST['user_phone'];
-	$subject = 'Заявка с лендинга Prozorro';
+	$subject = 'Заявка с лендинга Prozoro';
 
 	$api = new Handler('cpborgua', 'cpb.org.ua@gmail.com');
 

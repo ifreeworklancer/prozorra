@@ -6,7 +6,7 @@ if (isset($_POST['user_name']) && isset($_POST['user_email']) && isset($_POST['u
     $phone = $_POST['user_phone'];
 
     $to = 'cpb.org.ua@gmail.com';
-    $subject = 'Заявка с лендинга Prozorro';
+    $subject = 'Заявка с лендинга Prozoro';
 
     $message = "
     <html>
