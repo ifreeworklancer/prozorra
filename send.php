@@ -27,7 +27,11 @@ if (isset($_POST['user_name']) && isset($_POST['user_email']) && isset($_POST['u
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
+    /** Send email */
     mail($to, $subject, $message, $headers);
+
+    /** Add user to AMOCrm */
+    require_once __DIR__ . '/amocrm.php';
 
     header('Location: /thanks');
 }
