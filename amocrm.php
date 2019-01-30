@@ -32,7 +32,10 @@ try {
 		->setResponsibleUserId($api->config['ResponsibleUserId'])
 		->setLinkedLeadsId($lead)
 		->setCustomField($api->config['ContactFieldPhone'], $phone, 'MOB')
-		->setCustomField($api->config['ContactFieldEmail'], $email, 'PRIV');
+		->setCustomField($api->config['ContactFieldEmail'], $email, 'PRIV')
+		->setCustomField(630151, $_POST['utm_source'] ?? null)
+		->setCustomField(630153, $_POST['utm_medium'] ?? null)
+		->setCustomField(630155, $_POST['utm_campaign'] ?? null);
 
 	$api->request(new Request(Request::GET, ['query' => $email], ['contacts', 'list']));
 
