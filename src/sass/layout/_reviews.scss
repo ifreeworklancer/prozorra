@@ -36,6 +36,7 @@
 
   &-item {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -43,17 +44,24 @@
     margin: 0 30px;
 
     @media (min-width: map_get($grid-breakpoints, sm)) {
+      flex-direction: row;
       padding-right: 60px;
     }
 
     .main-content {
       width: 100%;
 
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        width: 60%;
+      }
+
       .quote {
         display: none;
+
         @media (min-width: map_get($grid-breakpoints, sm)) {
           display: block;
         }
+
 
         svg {
           transform: rotate(180deg);
@@ -70,6 +78,40 @@
 
       .name {
         text-align: right;
+      }
+    }
+
+    .secondary-content {
+      position: relative;
+      margin-bottom: 25px;
+      width: 100%;
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        margin-bottom: 0;
+        width: 30%;
+      }
+
+      .img {
+        position: relative;
+        width: 80%;
+        height: 225px;
+        @extend %img;
+        z-index: 4;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+          margin: 0;
+          width: 100%;
+        }
+      }
+
+      .decor-img {
+        position: absolute;
+        top: -20px;
+        left: 15px;
+        right: -40px;
+        bottom: 10px;
+        background: rgba(#fff, .3);
+        z-index: 3;
       }
     }
 

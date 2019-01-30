@@ -110,6 +110,7 @@ window.jQuery = window.$ = jquery;
                 cellAlign: 'left',
                 contain: false,
                 draggable: false,
+                adaptiveHeight: true,
                 wrapAround: true,
             });
 
