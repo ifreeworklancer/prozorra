@@ -34,7 +34,7 @@
                                        required>
                             </div>
                             <div class="text-center w-100 mt-4">
-                                <button type="submit" class="btn btn-primary">зарегистрироваться</button>
+                                <button type="submit" class="btn btn-primary">зареєструватися</button>
                             </div>
                         </div>
                     </form>
