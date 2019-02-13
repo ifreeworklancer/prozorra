@@ -7,7 +7,11 @@
                     <h5 class="feedback-item__title">
                         <?= $feedback['title']; ?>
                     </h5>
-                    <form method="post" action="./../../send.php">
+                    <form method="post" action="<?= $app_url ?>/send.php">
+                        <input type="hidden" name="utm_source" value="<?= $_GET['utm_source'] ?? '' ?>">
+                        <input type="hidden" name="utm_medium" value="<?= $_GET['utm_medium'] ?? '' ?>">
+                        <input type="hidden" name="utm_campaign" value="<?= $_GET['utm_campaign'] ?? '' ?>">
+
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="user-name--<?php echo $name = generateRandomString() ?>"
